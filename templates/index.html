@@ -1,0 +1,35 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Web Scraping App</h1>
+        </header>
+        <main>
+            <form id="scrapeForm">
+                <label for="urlInput">Enter URL:</label>
+                <input type="text" id="urlInput" name="url" placeholder="e.g., https://example.com">
+                <button type="button" onclick="scrape()">Scrape</button>
+            </form>
+            <div id="resultSection" style="display: none;">
+                <div id="result"></div>
+                <div id="totalLinks">Total Links: <span id="totalCount">0</span></div>
+                <button id="copyButton" onclick="copyToClipboard()">Copy</button>
+                <button id="downloadButton" onclick="downloadLinks()">Download</button>
+            </div>
+        </main>
+        <footer>
+            <p>© 2023 Web Scraping App</p>
+        </footer>
+    </div>
+</body>
+</html>

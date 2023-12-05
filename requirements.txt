@@ -1,0 +1,12 @@
+Flask
+flask
+requests
+beautifulsoup4
+tqdm
+fake_useragent
+urljoin
+DateTime
+requests
+pycopy-urllib.parse
+template-render
+jsonify
